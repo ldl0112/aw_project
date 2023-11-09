@@ -1,0 +1,16 @@
+
+spring:
+  application:
+    name: bootstrap.yml    #为服务名
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: 192.168.22.118:8849
+        group: DEFAULT_GROUP
+      discovery:
+        group: DEFAULT_GROUP
+        server-addr: 192.168.22.118:8849
+# 日志配置
+logging:
+  config: classpath:logback-spring.xml
